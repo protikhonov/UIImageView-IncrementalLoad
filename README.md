@@ -10,7 +10,8 @@ To use this category you need to use ARC and load ImageIO.framework agaist the p
 
 Example of using:
 
-   [self.imgViewOne loadImageWithURL:[NSURL URLWithString:@"http://awesomewallpapers.files.wordpress.com/2010/03/summer.png"] placeholderImage:nil incrementally:YES];
+   
+    [self.imgViewOne loadImageWithURL:[NSURL URLWithString:@"http://awesomewallpapers.files.wordpress.com/2010/03/summer.png"] placeholderImage:nil incrementally:YES];
 
     [self.imgViewTwo loadImageWithURL:[NSURL URLWithString:@"http://imgs.mi9.com/uploads/fantasy/4568/free-summer-fantasy-landscape-for-desktop-wallpaper_422_80985.jpg"] ];
 
