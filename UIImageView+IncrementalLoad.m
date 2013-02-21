@@ -130,7 +130,7 @@ static YKCache *_sharedCacheManager = nil;
 {
     YKCache *cache = [YKCache sharedCache];
     UIImage *cachedImage = [cache imageForKey:url.absoluteString];
-    if (cachedImage) {
+    if (cachedImage && success) {
         success(cachedImage);
         if (completion) {
             completion();
@@ -176,7 +176,7 @@ static YKCache *_sharedCacheManager = nil;
         CGImageSourceUpdateData(_imageSource, (__bridge CFDataRef)receivedData, NO);
         
         CGImageRef imageRef = CGImageSourceCreateImageAtIndex(_imageSource, 0, NULL);
-        if (imageRef)
+        if (imageRef && success)
         {
             UIImage *anImage = [UIImage imageWithCGImage:imageRef];
             success(anImage);
@@ -193,8 +193,10 @@ static YKCache *_sharedCacheManager = nil;
   didFailWithError:(NSError *)error
 {
     receivedData = nil;
-    
-    failure(error);
+
+    if (failure) {
+        failure(error);
+    }
     
     NSLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
@@ -205,9 +207,9 @@ static YKCache *_sharedCacheManager = nil;
 {
     UIImage *receivedImage = [UIImage imageWithData:receivedData];
     
-    if (receivedImage) {
+    if (receivedImage && success) {
         success(receivedImage);
-    } else {
+    } else if (failure) {
         failure(nil);
     }
     

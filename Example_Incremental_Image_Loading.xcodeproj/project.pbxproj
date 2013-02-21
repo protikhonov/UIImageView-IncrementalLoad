@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		95A31C0416D0292900747F66 /* UIImageView+IncrementalLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A31C0316D0292900747F66 /* UIImageView+IncrementalLoad.m */; };
 		95A31C0616D0F60F00747F66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A31C0516D0F60F00747F66 /* QuartzCore.framework */; };
 		95A31C0816D0F6CF00747F66 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A31C0716D0F6CF00747F66 /* ImageIO.framework */; };
 		95AEAFAB16CFABA0003C342D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AEAFAA16CFABA0003C342D /* UIKit.framework */; };
@@ -21,11 +20,10 @@
 		95AEAFC116CFABA1003C342D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95AEAFC016CFABA1003C342D /* Default-568h@2x.png */; };
 		95AEAFC416CFABA1003C342D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95AEAFC216CFABA1003C342D /* MainStoryboard.storyboard */; };
 		95AEAFC716CFABA1003C342D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AEAFC616CFABA1003C342D /* ViewController.m */; };
+		DAA0A1E716D6332C00F1DCE2 /* UIImageView+IncrementalLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA0A1E616D6332C00F1DCE2 /* UIImageView+IncrementalLoad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		95A31C0216D0292900747F66 /* UIImageView+IncrementalLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+IncrementalLoad.h"; sourceTree = "<group>"; };
-		95A31C0316D0292900747F66 /* UIImageView+IncrementalLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+IncrementalLoad.m"; sourceTree = "<group>"; };
 		95A31C0516D0F60F00747F66 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		95A31C0716D0F6CF00747F66 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		95AEAFA716CFABA0003C342D /* Example_Incremental_Image_Loading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example_Incremental_Image_Loading.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +42,8 @@
 		95AEAFC316CFABA1003C342D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		95AEAFC516CFABA1003C342D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		95AEAFC616CFABA1003C342D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAA0A1E516D6332C00F1DCE2 /* UIImageView+IncrementalLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+IncrementalLoad.h"; sourceTree = SOURCE_ROOT; };
+		DAA0A1E616D6332C00F1DCE2 /* UIImageView+IncrementalLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+IncrementalLoad.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 				95AEAFC216CFABA1003C342D /* MainStoryboard.storyboard */,
 				95AEAFC516CFABA1003C342D /* ViewController.h */,
 				95AEAFC616CFABA1003C342D /* ViewController.m */,
+				DAA0A1E516D6332C00F1DCE2 /* UIImageView+IncrementalLoad.h */,
+				DAA0A1E616D6332C00F1DCE2 /* UIImageView+IncrementalLoad.m */,
 				95AEAFB116CFABA1003C342D /* Supporting Files */,
-				95A31C0216D0292900747F66 /* UIImageView+IncrementalLoad.h */,
-				95A31C0316D0292900747F66 /* UIImageView+IncrementalLoad.m */,
 			);
 			path = Example_Incremental_Image_Loading;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 				95AEAFB716CFABA1003C342D /* main.m in Sources */,
 				95AEAFBB16CFABA1003C342D /* AppDelegate.m in Sources */,
 				95AEAFC716CFABA1003C342D /* ViewController.m in Sources */,
-				95A31C0416D0292900747F66 /* UIImageView+IncrementalLoad.m in Sources */,
+				DAA0A1E716D6332C00F1DCE2 /* UIImageView+IncrementalLoad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
